@@ -355,16 +355,16 @@ export default function Portfolio() {
               <div className="relative h-48 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-pink-400 to-purple-600 opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
                 <Image
-                  src="/placeholder.svg?height=192&width=384"
-                  alt="Projeto 1"
+                  src="./gmg.jpeg"
+                  alt="GMG Educação"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                {/* <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <Button variant="secondary" size="sm" className="shadow-lg">
                     Ver detalhes
                   </Button>
-                </div>
+                </div> */}
               </div>
               <CardHeader>
                 <CardTitle>Site para venda de cursos</CardTitle>
@@ -436,16 +436,16 @@ export default function Portfolio() {
               <div className="relative h-48 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-indigo-600 opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
                 <Image
-                  src="/placeholder.svg?height=192&width=384"
-                  alt="Projeto 2"
+                  src="/fotoAapvr.png"
+                  alt="Micro-Saas"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                {/* <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <Button variant="secondary" size="sm" className="shadow-lg">
                     Ver detalhes
                   </Button>
-                </div>
+                </div> */}
               </div>
               <CardHeader>
                 <CardTitle>Sistema de Gestão Full Stack</CardTitle>
@@ -485,21 +485,21 @@ export default function Portfolio() {
                 </p>
               </CardContent>
               <CardFooter className="flex justify-between">
-                {/* <Button
+                <Button
                   variant="outline"
                   size="sm"
                   asChild
                   className="group-hover:border-blue-500 group-hover:text-blue-600 transition-colors duration-300"
                 >
                   <Link
-                    href="https://github.com"
+                    href=""
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <Github className="mr-2 h-4 w-4" />
                     Código
                   </Link>
-                </Button> */}
+                </Button>
                 <Button
                   size="sm"
                   asChild
@@ -522,16 +522,16 @@ export default function Portfolio() {
               <div className="relative h-48 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-400 to-pink-600 opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
                 <Image
-                  src="/placeholder.svg?height=192&width=384"
-                  alt="Projeto 3"
+                  src="/fotoBike.png"
+                  alt="Bikcraft"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                {/* <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <Button variant="secondary" size="sm" className="shadow-lg">
                     Ver detalhes
                   </Button>
-                </div>
+                </div> */}
               </div>
               <CardHeader>
                 <CardTitle>Bikcraft - Venda de bicicletas</CardTitle>
@@ -625,28 +625,28 @@ export default function Portfolio() {
                     <div className="flex flex-wrap gap-2">
                       <Badge
                         variant="outline"
-                        className="flex items-center gap-1 px-3 py-1 border-orange-300 text-orange-700 hover:bg-orange-50"
+                        className="flex items-center gap-1 px-3 py-1 border-orange-500 text-orange-600 hover:bg-orange-50"
                       >
                         <Html5 className="h-3.5 w-3.5" />
                         HTML5
                       </Badge>
                       <Badge
                         variant="outline"
-                        className="flex items-center gap-1 px-3 py-1 border-blue-300 text-blue-700 hover:bg-blue-50"
+                        className="flex items-center gap-1 px-3 py-1 border-blue-500 text-blue-600 hover:bg-blue-50"
                       >
                         <Css3 className="h-3.5 w-3.5" />
                         CSS3
                       </Badge>
                       <Badge
                         variant="outline"
-                        className="flex items-center gap-1 px-3 py-1 border-yellow-300 text-yellow-700 hover:bg-yellow-50"
+                        className="flex items-center gap-1 px-3 py-1 border-yellow-400 text-yellow-600 hover:bg-yellow-50"
                       >
                         <Code className="h-3.5 w-3.5" />
                         JavaScript
                       </Badge>
                       <Badge
                         variant="outline"
-                        className="flex items-center gap-1 px-3 py-1 border-blue-300 text-blue-700 hover:bg-blue-50"
+                        className="flex items-center gap-1 px-3 py-1 border-sky-400 text-sky-600 hover:bg-sky-50"
                       >
                         <FileCode className="h-3.5 w-3.5" />
                         TypeScript
@@ -662,28 +662,28 @@ export default function Portfolio() {
                     <div className="flex flex-wrap gap-2">
                       <Badge
                         variant="outline"
-                        className="flex items-center gap-1 px-3 py-1 border-blue-300 text-blue-700 hover:bg-blue-50"
+                        className="flex items-center gap-1 px-3 py-1 border-cyan-500 text-cyan-700 hover:bg-cyan-50"
                       >
                         <Code className="h-3.5 w-3.5" />
                         React
                       </Badge>
                       <Badge
                         variant="outline"
-                        className="flex items-center gap-1 px-3 py-1 border-indigo-300 text-indigo-700 hover:bg-indigo-50"
+                        className="flex items-center gap-1 px-3 py-1 border-black text-black hover:bg-gray-100"
                       >
                         <FileCode className="h-3.5 w-3.5" />
                         Next.js
                       </Badge>
                       <Badge
                         variant="outline"
-                        className="flex items-center gap-1 px-3 py-1 border-teal-300 text-teal-700 hover:bg-teal-50"
+                        className="flex items-center gap-1 px-3 py-1 border-teal-400 text-teal-600 hover:bg-teal-50"
                       >
                         <Palette className="h-3.5 w-3.5" />
                         Tailwind CSS
                       </Badge>
                       <Badge
                         variant="outline"
-                        className="flex items-center gap-1 px-3 py-1 border-purple-300 text-purple-700 hover:bg-purple-50"
+                        className="flex items-center gap-1 px-3 py-1 border-purple-600 text-purple-700 hover:bg-purple-100"
                       >
                         <LayoutGrid className="h-3.5 w-3.5" />
                         Bootstrap
@@ -704,33 +704,40 @@ export default function Portfolio() {
                   <div>
                     <h3 className="font-medium mb-2 flex items-center gap-2">
                       <Code className="h-4 w-4 text-green-600" />
-                      Linguagens & Runtime
+                      Linguagens
                     </h3>
                     <div className="flex flex-wrap gap-2">
                       <Badge
                         variant="outline"
-                        className="flex items-center gap-1 px-3 py-1 border-green-300 text-green-700 hover:bg-green-50"
+                        className="flex items-center gap-1 px-3 py-1 border-green-600 text-green-700 hover:bg-green-50"
                       >
                         <Server className="h-3.5 w-3.5" />
                         Node.js
                       </Badge>
                       <Badge
                         variant="outline"
-                        className="flex items-center gap-1 px-3 py-1 border-blue-300 text-blue-700 hover:bg-blue-50"
+                        className="flex items-center gap-1 px-3 py-1 border-red-500 text-red-600 hover:bg-red-50"
                       >
-                        <FileCode className="h-3.5 w-3.5" />
-                        TypeScript
+                        <Server className="h-3.5 w-3.5" />
+                        Nest.js
                       </Badge>
                       <Badge
                         variant="outline"
-                        className="flex items-center gap-1 px-3 py-1 border-purple-300 text-purple-700 hover:bg-purple-50"
+                        className="flex items-center gap-1 px-3 py-1 border-blue-700 text-blue-800 hover:bg-blue-100"
+                      >
+                        <Server className="h-3.5 w-3.5" />
+                        Java
+                      </Badge>
+                      <Badge
+                        variant="outline"
+                        className="flex items-center gap-1 px-3 py-1 border-indigo-400 text-indigo-600 hover:bg-indigo-50"
                       >
                         <Code className="h-3.5 w-3.5" />
-                        Python
+                        Laravel
                       </Badge>
                       <Badge
                         variant="outline"
-                        className="flex items-center gap-1 px-3 py-1 border-red-300 text-red-700 hover:bg-red-50"
+                        className="flex items-center gap-1 px-3 py-1 border-purple-600 text-purple-700 hover:bg-purple-100"
                       >
                         <FileCode className="h-3.5 w-3.5" />
                         PHP
@@ -746,38 +753,38 @@ export default function Portfolio() {
                     <div className="flex flex-wrap gap-2">
                       <Badge
                         variant="outline"
-                        className="flex items-center gap-1 px-3 py-1 border-blue-300 text-blue-700 hover:bg-blue-50"
+                        className="flex items-center gap-1 px-3 py-1 border-blue-600 text-blue-700 hover:bg-blue-50"
                       >
                         <Database className="h-3.5 w-3.5" />
-                        MongoDB
+                        PostgreSQL
                       </Badge>
                       <Badge
                         variant="outline"
-                        className="flex items-center gap-1 px-3 py-1 border-orange-300 text-orange-700 hover:bg-orange-50"
+                        className="flex items-center gap-1 px-3 py-1 border-orange-600 text-orange-700 hover:bg-orange-50"
                       >
                         <Database className="h-3.5 w-3.5" />
                         SQL
                       </Badge>
                       <Badge
                         variant="outline"
-                        className="flex items-center gap-1 px-3 py-1 border-green-300 text-green-700 hover:bg-green-50"
+                        className="flex items-center gap-1 px-3 py-1 border-green-700 text-green-800 hover:bg-green-100"
                       >
                         <FileCode className="h-3.5 w-3.5" />
                         Express
                       </Badge>
                       <Badge
                         variant="outline"
-                        className="flex items-center gap-1 px-3 py-1 border-purple-300 text-purple-700 hover:bg-purple-50"
+                        className="flex items-center gap-1 px-3 py-1 border-indigo-300 text-indigo-700 hover:bg-indigo-50"
                       >
                         <FileJson className="h-3.5 w-3.5" />
                         RESTful APIs
                       </Badge>
                       <Badge
                         variant="outline"
-                        className="flex items-center gap-1 px-3 py-1 border-pink-300 text-pink-700 hover:bg-pink-50"
+                        className="flex items-center gap-1 px-3 py-1 border-teal-600 text-teal-700 hover:bg-teal-50"
                       >
                         <FileJson className="h-3.5 w-3.5" />
-                        GraphQL
+                        MySQL
                       </Badge>
                     </div>
                   </div>
