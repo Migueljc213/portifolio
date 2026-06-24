@@ -131,6 +131,7 @@ export default function Portfolio() {
           <nav className="hidden md:flex gap-6">
             <Link href="#sobre" className="text-muted-foreground hover:text-primary transition-colors">Sobre</Link>
             <Link href="#experiencia" className="text-muted-foreground hover:text-primary transition-colors">Experiência</Link>
+            <Link href="#cursos" className="text-muted-foreground hover:text-primary transition-colors">Cursos</Link>
             <Link href="#projetos" className="text-muted-foreground hover:text-primary transition-colors">Projetos</Link>
             <Link href="#habilidades" className="text-muted-foreground hover:text-primary transition-colors">Habilidades</Link>
             <Link href="#contato" className="text-muted-foreground hover:text-primary transition-colors">Contato</Link>
@@ -144,6 +145,7 @@ export default function Portfolio() {
                 <div className="flex flex-col gap-6 mt-10">
                   <Link href="#sobre" className="text-muted-foreground hover:text-primary transition-colors">Sobre</Link>
                   <Link href="#experiencia" className="text-muted-foreground hover:text-primary transition-colors">Experiência</Link>
+                  <Link href="#cursos" className="text-muted-foreground hover:text-primary transition-colors">Cursos</Link>
                   <Link href="#projetos" className="text-muted-foreground hover:text-primary transition-colors">Projetos</Link>
                   <Link href="#habilidades" className="text-muted-foreground hover:text-primary transition-colors">Habilidades</Link>
                   <Link href="#contato" className="text-muted-foreground hover:text-primary transition-colors">Contato</Link>
@@ -178,7 +180,9 @@ export default function Portfolio() {
               </p>
               <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
                 <span className="flex items-center gap-1"><MapPin className="h-4 w-4" /> Rio de Janeiro, RJ</span>
-                <span className="flex items-center gap-1"><Phone className="h-4 w-4" /> +55 (24) 99973-6248</span>
+                <Link href="https://wa.me/5524999736248" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-green-600 transition-colors">
+                  <Phone className="h-4 w-4" /> +55 (24) 99973-6248
+                </Link>
               </div>
               <div className="flex gap-4">
                 <Button asChild className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 shadow-lg hover:shadow-xl transition-all duration-300">
@@ -223,23 +227,51 @@ export default function Portfolio() {
 
         {/* ── Sobre ── */}
         <section id="sobre" className="py-16 md:py-24 bg-gradient-to-b from-background via-pink-50 to-background">
-          <div className="container space-y-8">
+          <div className="container space-y-10">
             <h2 className="text-3xl md:text-4xl font-bold text-center animate-on-scroll transition-all duration-700 ease-out">
               <span className="bg-gradient-to-r from-indigo-500 to-purple-600 text-transparent bg-clip-text">Sobre Mim</span>
             </h2>
-            <div className="max-w-3xl mx-auto text-center space-y-4 animate-on-scroll transition-all duration-700 ease-out delay-200">
-              <p className="text-lg">
-                Sou um desenvolvedor Full-Stack com mais de 2 anos de experiência construindo aplicações web completas.
-                Minha trajetória passou por startup, liderança técnica de equipe e desenvolvimento de produtos SaaS com integração de IA.
+            <div className="max-w-3xl mx-auto space-y-5 text-muted-foreground animate-on-scroll transition-all duration-700 ease-out delay-200">
+              <p className="text-base md:text-lg leading-relaxed">
+                Comecei programando por curiosidade e em pouco tempo estava liderando tecnicamente uma equipe no
+                Projeto AAP-VR — um ERP construído do zero com NestJS e Next.js, onde também mentorei estagiários.
+                Desde então, passei por uma startup onde fui responsável pelo ciclo completo de produtos Micro-SaaS,
+                e atualmente faço parte do time da <span className="text-foreground font-medium">Frog Summit</span>,
+                onde construo pipelines de ingestão de dados para plataformas de marketing digital como Meta Ads,
+                Google Ads, DV360 e TikTok.
               </p>
-              <p className="text-lg">
-                Trabalho diariamente com Next.js, React, Node.js e NestJS, sempre seguindo boas práticas como SOLID, DDD e Clean
-                Architecture. Tenho experiência com deploy em AWS, containerização com Docker, observabilidade com Prometheus/Grafana
-                e integrações com APIs externas como Meta Ads e modelos de linguagem (LLMs).
+              <p className="text-base md:text-lg leading-relaxed">
+                Nos últimos dois anos entreguei sistemas reais em produção: de uma plataforma completa de venda de
+                ingressos com check-in por QR Code (meu TCC) à automação de campanhas de tráfego pago com IA via
+                Meta Ads API. Trabalho o ciclo completo — do banco de dados e API ao componente de UI — sempre com
+                foco em qualidade:{" "}
+                <span className="text-foreground font-medium">testes automatizados com Jest</span> (unitários,
+                integração e E2E), code reviews, pair programming e aplicação consistente de{" "}
+                <span className="text-foreground font-medium">SOLID, DDD e Clean Architecture</span>.
               </p>
-              <p className="text-lg">
-                Busco oportunidades onde possa entregar soluções reais de impacto e continuar crescendo como engenheiro de software.
+              <p className="text-base md:text-lg leading-relaxed">
+                Além do código, tenho experiência operacional real: containerização com Docker e Kubernetes, CI/CD via
+                GitHub Actions, observabilidade com Prometheus e Grafana, e deploy na AWS (EC2, SQS, SSM, CloudWatch).
+                Integro <span className="text-foreground font-medium">modelos de linguagem (LLMs)</span> em produtos
+                funcionais e estou ativamente me aprofundando em DevOps e fundamentos de IA generativa.
               </p>
+              <p className="text-base md:text-lg leading-relaxed">
+                Busco uma equipe onde engenharia e produto andem juntos — onde boas práticas não são overhead, mas
+                parte da cultura — e onde eu possa continuar entregando soluções que resolvem problemas reais.
+              </p>
+            </div>
+            {/* Destaques numéricos */}
+            <div className="max-w-3xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 animate-on-scroll transition-all duration-700 ease-out delay-400">
+              {[
+                { valor: "2+", label: "anos de experiência" },
+                { valor: "3", label: "empresas / contextos" },
+                { valor: "20+", label: "tecnologias no stack" },
+              ].map(({ valor, label }) => (
+                <div key={label} className="text-center p-4 rounded-xl bg-white shadow-sm border border-purple-100">
+                  <p className="text-2xl font-bold bg-gradient-to-r from-pink-500 to-indigo-600 text-transparent bg-clip-text">{valor}</p>
+                  <p className="text-xs text-muted-foreground mt-1">{label}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -356,6 +388,117 @@ export default function Portfolio() {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* ── Cursos & Certificações ── */}
+        <section id="cursos" className="py-16 md:py-24 container">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 animate-on-scroll transition-all duration-700 ease-out">
+            <span className="bg-gradient-to-r from-teal-500 to-indigo-600 text-transparent bg-clip-text">
+              Cursos & Certificações
+            </span>
+          </h2>
+          <p className="text-center text-muted-foreground mb-12 animate-on-scroll transition-all duration-700 ease-out delay-100">
+            Aprendizado contínuo fora da graduação — formações práticas e orientadas ao mercado.
+          </p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+
+            {/* Alura DevOps — em andamento */}
+            <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 group animate-on-scroll transition-all duration-700 ease-out delay-100 relative overflow-hidden">
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-orange-400 to-amber-500" />
+              <CardHeader className="pb-3 pt-5">
+                <div className="flex items-start justify-between gap-2">
+                  <div>
+                    <p className="text-xs font-semibold text-orange-500 uppercase tracking-wide mb-1">Alura</p>
+                    <CardTitle className="text-base leading-tight">DevOps — Git, Linux, Docker & K8s</CardTitle>
+                  </div>
+                  <Badge className="bg-green-100 text-green-700 text-xs shrink-0 mt-0.5">Em andamento</Badge>
+                </div>
+              </CardHeader>
+              <CardContent className="pb-4">
+                <p className="text-xs text-muted-foreground mb-3 flex items-center gap-1">
+                  <Calendar className="h-3 w-3" /> Jun/2026 – Presente
+                </p>
+                <div className="flex flex-wrap gap-1">
+                  {["Git", "Linux", "DevOps", "Docker", "Kubernetes"].map((t) => (
+                    <Badge key={t} variant="outline" className="text-xs border-orange-200 text-orange-700">{t}</Badge>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* DIO — LLMs em andamento */}
+            <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 group animate-on-scroll transition-all duration-700 ease-out delay-200 relative overflow-hidden">
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-violet-500 to-purple-600" />
+              <CardHeader className="pb-3 pt-5">
+                <div className="flex items-start justify-between gap-2">
+                  <div>
+                    <p className="text-xs font-semibold text-violet-500 uppercase tracking-wide mb-1">DIO</p>
+                    <CardTitle className="text-base leading-tight">Fundamentos de LLMs</CardTitle>
+                  </div>
+                  <Badge className="bg-green-100 text-green-700 text-xs shrink-0 mt-0.5">Em andamento</Badge>
+                </div>
+              </CardHeader>
+              <CardContent className="pb-4">
+                <p className="text-xs text-muted-foreground mb-3 flex items-center gap-1">
+                  <Calendar className="h-3 w-3" /> Jun/2026 – Presente
+                </p>
+                <div className="flex flex-wrap gap-1">
+                  {["LLMs", "Transformers", "Prompt Eng.", "RAG", "Fine-tuning"].map((t) => (
+                    <Badge key={t} variant="outline" className="text-xs border-violet-200 text-violet-700">{t}</Badge>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Full Cycle 3 — concluído */}
+            <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 group animate-on-scroll transition-all duration-700 ease-out delay-300 relative overflow-hidden">
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-sky-500 to-cyan-500" />
+              <CardHeader className="pb-3 pt-5">
+                <div className="flex items-start justify-between gap-2">
+                  <div>
+                    <p className="text-xs font-semibold text-sky-500 uppercase tracking-wide mb-1">Full Cycle 3</p>
+                    <CardTitle className="text-base leading-tight">Intensivão de Docker</CardTitle>
+                  </div>
+                  <Badge className="bg-slate-100 text-slate-600 text-xs shrink-0 mt-0.5">Concluído</Badge>
+                </div>
+              </CardHeader>
+              <CardContent className="pb-4">
+                <p className="text-xs text-muted-foreground mb-3 flex items-center gap-1">
+                  <Calendar className="h-3 w-3" /> Abr/2026 · 2h
+                </p>
+                <div className="flex flex-wrap gap-1">
+                  {["Docker", "Containers", "Compose", "Boas práticas"].map((t) => (
+                    <Badge key={t} variant="outline" className="text-xs border-sky-200 text-sky-700">{t}</Badge>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Java 10x — concluído */}
+            <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 group animate-on-scroll transition-all duration-700 ease-out delay-400 relative overflow-hidden">
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-amber-500 to-orange-500" />
+              <CardHeader className="pb-3 pt-5">
+                <div className="flex items-start justify-between gap-2">
+                  <div>
+                    <p className="text-xs font-semibold text-amber-600 uppercase tracking-wide mb-1">Java 10x</p>
+                    <CardTitle className="text-base leading-tight">Java Completo — 40h</CardTitle>
+                  </div>
+                  <Badge className="bg-slate-100 text-slate-600 text-xs shrink-0 mt-0.5">Concluído</Badge>
+                </div>
+              </CardHeader>
+              <CardContent className="pb-4">
+                <p className="text-xs text-muted-foreground mb-3 flex items-center gap-1">
+                  <Calendar className="h-3 w-3" /> Fev/2026 · 40h
+                </p>
+                <div className="flex flex-wrap gap-1">
+                  {["Java", "OOP", "Spring Boot", "JUnit", "Streams"].map((t) => (
+                    <Badge key={t} variant="outline" className="text-xs border-amber-200 text-amber-700">{t}</Badge>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+
           </div>
         </section>
 
@@ -952,7 +1095,9 @@ export default function Portfolio() {
                   </div>
                   <div className="flex items-center gap-3 hover:translate-x-1 transition-transform duration-300">
                     <Phone className="h-5 w-5 text-green-600 shrink-0" />
-                    <p className="text-sm">+55 (24) 99973-6248</p>
+                    <Link href="https://wa.me/5524999736248" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-green-600 transition-colors">
+                      +55 (24) 99973-6248 · WhatsApp
+                    </Link>
                   </div>
                   <div className="flex items-center gap-3 hover:translate-x-1 transition-transform duration-300">
                     <Linkedin className="h-5 w-5 text-blue-600 shrink-0" />
