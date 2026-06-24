@@ -404,8 +404,7 @@ export default function Portfolio() {
                     </Link>
                   </Button>
                   <Button size="sm" asChild className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 transition-all duration-300">
-                    {/* TODO: adicionar link de acesso */}
-                    <Link href="" target="_blank" rel="noopener noreferrer">
+                    <Link href="https://projeto-trafego-pago.vercel.app" target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="mr-2 h-4 w-4" />Demo
                     </Link>
                   </Button>
@@ -444,8 +443,7 @@ export default function Portfolio() {
                     </Link>
                   </Button>
                   <Button size="sm" asChild className="bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 transition-all duration-300">
-                    {/* TODO: adicionar link de acesso */}
-                    <Link href="" target="_blank" rel="noopener noreferrer">
+                    <Link href="https://tickton-front.vercel.app" target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="mr-2 h-4 w-4" />Demo
                     </Link>
                   </Button>
@@ -482,8 +480,7 @@ export default function Portfolio() {
                     </Link>
                   </Button>
                   <Button size="sm" asChild className="bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 transition-all duration-300">
-                    {/* TODO: adicionar link de acesso */}
-                    <Link href="" target="_blank" rel="noopener noreferrer">
+                    <Link href="https://gerador-curriculo-23aw.vercel.app" target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="mr-2 h-4 w-4" />Demo
                     </Link>
                   </Button>
@@ -675,6 +672,37 @@ export default function Portfolio() {
                   </Button>
                   <Button size="sm" asChild className="bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 transition-all duration-300">
                     <Link href="https://migueljc213.github.io/bikcraft-miguel/" target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="mr-2 h-4 w-4" />Demo
+                    </Link>
+                  </Button>
+                </CardFooter>
+              </Card>
+
+              {/* ETPC — Site institucional */}
+              <Card className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-all duration-300 group animate-on-scroll transition-all duration-700 ease-out delay-550">
+                <ProjectImageCarousel
+                  images={["/projects/etpc-1.svg"]}
+                  alt="ETPC Escola Técnica"
+                />
+                <CardHeader>
+                  <CardTitle>ETPC — Escola Técnica CSN</CardTitle>
+                  <CardDescription>Site institucional para escola técnica com catálogo de cursos</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <Badge className="bg-black text-white hover:bg-gray-800">Next.js</Badge>
+                    <Badge className="bg-sky-100 text-sky-700 hover:bg-sky-200">TypeScript</Badge>
+                    <Badge className="bg-teal-100 text-teal-700 hover:bg-teal-200">Tailwind CSS</Badge>
+                    <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-200">Vercel</Badge>
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    Site institucional para a ETPC (Escola Técnica da Fundação CSN) com catálogo de cursos
+                    técnicos, ensino médio, cursos online e portal do aluno. Foco em performance e SEO.
+                  </p>
+                </CardContent>
+                <CardFooter className="flex justify-end">
+                  <Button size="sm" asChild className="bg-gradient-to-r from-orange-500 to-amber-600 hover:from-orange-600 hover:to-amber-700 transition-all duration-300">
+                    <Link href="https://site-etpc.vercel.app" target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="mr-2 h-4 w-4" />Demo
                     </Link>
                   </Button>
