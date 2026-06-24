@@ -1,0 +1,92 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="450" fill="#0c0a00"/>
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="200" height="450" fill="#171200"/>
+  <!-- Logo -->
+  <rect x="14" y="14" width="32" height="32" rx="8" fill="#f59e0b"/>
+  <text x="16" y="35" fill="#0c0a00" font-size="16" font-weight="bold" font-family="monospace">TF</text>
+  <text x="54" y="35" fill="white" font-size="13" font-weight="bold" font-family="sans-serif">TaskFlow</text>
+  <text x="54" y="48" fill="#78716c" font-size="9" font-family="sans-serif">Java + Spring Boot</text>
+  <!-- Nav -->
+  <rect x="10" y="72" width="180" height="32" rx="6" fill="#f59e0b" opacity="0.15"/>
+  <text x="28" y="92" fill="#f59e0b" font-size="12" font-weight="600" font-family="sans-serif">Dashboard</text>
+  <text x="28" y="126" fill="#78716c" font-size="12" font-family="sans-serif">Projetos</text>
+  <text x="28" y="160" fill="#78716c" font-size="12" font-family="sans-serif">Minhas Tarefas</text>
+  <text x="28" y="194" fill="#78716c" font-size="12" font-family="sans-serif">Equipe</text>
+  <text x="28" y="228" fill="#78716c" font-size="12" font-family="sans-serif">Relatórios</text>
+  <!-- Projects list -->
+  <text x="14" y="280" fill="#57534e" font-size="10" font-family="sans-serif">PROJETOS</text>
+  <rect x="10" y="290" width="180" height="28" rx="4" fill="#1c1a00"/>
+  <rect x="20" y="300" width="8" height="8" rx="2" fill="#22c55e"/>
+  <text x="36" y="309" fill="#e2e8f0" font-size="11" font-family="sans-serif">Sistema ERP</text>
+  <rect x="10" y="324" width="180" height="28" rx="4" fill="#1c1a00"/>
+  <rect x="20" y="334" width="8" height="8" rx="2" fill="#f59e0b"/>
+  <text x="36" y="343" fill="#e2e8f0" font-size="11" font-family="sans-serif">API Gateway</text>
+  <rect x="10" y="358" width="180" height="28" rx="4" fill="#1c1a00"/>
+  <rect x="20" y="368" width="8" height="8" rx="2" fill="#0ea5e9"/>
+  <text x="36" y="377" fill="#e2e8f0" font-size="11" font-family="sans-serif">Dashboard</text>
+  <!-- Header -->
+  <rect x="200" y="0" width="600" height="50" fill="#171200"/>
+  <text x="220" y="22" fill="#78716c" font-size="10" font-family="sans-serif">PROJETO</text>
+  <text x="220" y="40" fill="white" font-size="15" font-weight="bold" font-family="sans-serif">Sistema ERP — Sprint 4</text>
+  <rect x="598" y="11" width="100" height="28" rx="6" fill="#f59e0b"/>
+  <text x="648" y="30" fill="#0c0a00" font-size="12" font-weight="600" font-family="sans-serif" text-anchor="middle">+ Nova Tarefa</text>
+  <rect x="706" y="11" width="82" height="28" rx="6" fill="#1c1a00" stroke="#292524" stroke-width="1"/>
+  <text x="747" y="30" fill="#78716c" font-size="11" font-family="sans-serif" text-anchor="middle">Kanban</text>
+  <!-- Sprint progress bar -->
+  <rect x="220" y="58" width="570" height="30" rx="6" fill="#1c1a00"/>
+  <text x="232" y="77" fill="#78716c" font-size="10" font-family="sans-serif">Sprint 4 • 14 dias restantes</text>
+  <rect x="420" y="66" width="358" height="12" rx="6" fill="#292524"/>
+  <rect x="420" y="66" width="215" height="12" rx="6" fill="#f59e0b"/>
+  <text x="766" y="78" fill="#a8a29e" font-size="9" font-family="sans-serif" text-anchor="middle">60%</text>
+  <!-- Kanban Board -->
+  <!-- Column: A Fazer -->
+  <rect x="220" y="98" width="170" height="344" rx="8" fill="#1c1a00"/>
+  <text x="234" y="118" fill="#a8a29e" font-size="11" font-weight="600" font-family="sans-serif">A FAZER</text>
+  <rect x="340" y="108" width="20" height="18" rx="9" fill="#292524"/>
+  <text x="350" y="121" fill="#a8a29e" font-size="9" font-family="sans-serif" text-anchor="middle">4</text>
+  <!-- Task cards -->
+  <rect x="228" y="128" width="154" height="70" rx="6" fill="#232000"/>
+  <text x="238" y="146" fill="#f59e0b" font-size="9" font-family="sans-serif">BACKEND</text>
+  <text x="238" y="161" fill="white" font-size="11" font-weight="600" font-family="sans-serif">Endpoint de login JWT</text>
+  <text x="238" y="175" fill="#78716c" font-size="9" font-family="sans-serif">Spring Security + JWT</text>
+  <rect x="338" y="186" width="36" height="14" rx="7" fill="#dc2626" opacity="0.2"/>
+  <text x="356" y="197" fill="#ef4444" font-size="8" font-family="sans-serif" text-anchor="middle">Alta</text>
+  <rect x="228" y="206" width="154" height="64" rx="6" fill="#232000"/>
+  <text x="238" y="222" fill="#0ea5e9" font-size="9" font-family="sans-serif">FRONTEND</text>
+  <text x="238" y="237" fill="white" font-size="11" font-weight="600" font-family="sans-serif">Tela de Dashboard</text>
+  <text x="238" y="251" fill="#78716c" font-size="9" font-family="sans-serif">Thymeleaf + Bootstrap</text>
+  <!-- Column: Em Progresso -->
+  <rect x="402" y="98" width="170" height="344" rx="8" fill="#1c1a00"/>
+  <text x="416" y="118" fill="#f59e0b" font-size="11" font-weight="600" font-family="sans-serif">EM PROGRESSO</text>
+  <rect x="528" y="108" width="20" height="18" rx="9" fill="#f59e0b" opacity="0.2"/>
+  <text x="538" y="121" fill="#f59e0b" font-size="9" font-family="sans-serif" text-anchor="middle">3</text>
+  <rect x="410" y="128" width="154" height="76" rx="6" fill="#232000" stroke="#f59e0b" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="420" y="146" fill="#f59e0b" font-size="9" font-family="sans-serif">BACKEND</text>
+  <text x="420" y="161" fill="white" font-size="11" font-weight="600" font-family="sans-serif">CRUD de Projetos</text>
+  <text x="420" y="175" fill="#78716c" font-size="9" font-family="sans-serif">Spring Data JPA + PostgreSQL</text>
+  <rect x="420" y="181" width="120" height="8" rx="4" fill="#292524"/>
+  <rect x="420" y="181" width="72" height="8" rx="4" fill="#f59e0b" opacity="0.7"/>
+  <rect x="410" y="212" width="154" height="64" rx="6" fill="#232000"/>
+  <text x="420" y="228" fill="#22c55e" font-size="9" font-family="sans-serif">TESTS</text>
+  <text x="420" y="243" fill="white" font-size="11" font-weight="600" font-family="sans-serif">Testes de Integração</text>
+  <text x="420" y="257" fill="#78716c" font-size="9" font-family="sans-serif">JUnit 5 + Mockito</text>
+  <!-- Column: Concluído -->
+  <rect x="584" y="98" width="186" height="344" rx="8" fill="#1c1a00"/>
+  <text x="598" y="118" fill="#22c55e" font-size="11" font-weight="600" font-family="sans-serif">CONCLUÍDO</text>
+  <rect x="728" y="108" width="20" height="18" rx="9" fill="#22c55e" opacity="0.15"/>
+  <text x="738" y="121" fill="#22c55e" font-size="9" font-family="sans-serif" text-anchor="middle">6</text>
+  <rect x="592" y="128" width="170" height="64" rx="6" fill="#1c1a00" opacity="0.6"/>
+  <text x="600" y="148" fill="#22c55e" font-size="9" font-family="sans-serif">✓ CONCLUÍDO</text>
+  <text x="600" y="163" fill="#a8a29e" font-size="11" font-family="sans-serif">Configuração do Docker</text>
+  <text x="600" y="177" fill="#57534e" font-size="9" font-family="sans-serif">PostgreSQL + Spring Boot</text>
+  <rect x="592" y="200" width="170" height="64" rx="6" fill="#1c1a00" opacity="0.6"/>
+  <text x="600" y="220" fill="#22c55e" font-size="9" font-family="sans-serif">✓ CONCLUÍDO</text>
+  <text x="600" y="235" fill="#a8a29e" font-size="11" font-family="sans-serif">Modelagem do Banco</text>
+  <text x="600" y="249" fill="#57534e" font-size="9" font-family="sans-serif">Entities + Relationships</text>
+  <rect x="592" y="272" width="170" height="64" rx="6" fill="#1c1a00" opacity="0.6"/>
+  <text x="600" y="292" fill="#22c55e" font-size="9" font-family="sans-serif">✓ CONCLUÍDO</text>
+  <text x="600" y="307" fill="#a8a29e" font-size="11" font-family="sans-serif">Autenticação Spring Security</text>
+  <text x="600" y="321" fill="#57534e" font-size="9" font-family="sans-serif">JWT + BCrypt</text>
+</svg>

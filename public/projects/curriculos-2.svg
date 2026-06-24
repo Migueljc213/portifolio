@@ -1,0 +1,73 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="450" fill="#0f0a1e"/>
+  <!-- Header bar -->
+  <rect x="0" y="0" width="800" height="48" fill="#160d28"/>
+  <text x="24" y="30" fill="white" font-size="14" font-weight="bold" font-family="sans-serif">✨ PDF Gerado com Sucesso</text>
+  <rect x="610" y="10" width="88" height="28" rx="6" fill="#7c3aed"/>
+  <text x="654" y="29" fill="white" font-size="11" font-family="sans-serif" text-anchor="middle">⬇ Baixar PDF</text>
+  <rect x="706" y="10" width="82" height="28" rx="6" fill="#1a1030" stroke="#334155" stroke-width="1"/>
+  <text x="747" y="29" fill="#94a3b8" font-size="11" font-family="sans-serif" text-anchor="middle">Novo PDF</text>
+  <!-- CV Paper shadow -->
+  <rect x="188" y="56" width="428" height="390" rx="4" fill="#000" opacity="0.4"/>
+  <!-- CV Paper -->
+  <rect x="184" y="52" width="428" height="390" rx="4" fill="white"/>
+  <!-- CV Header section -->
+  <rect x="184" y="52" width="428" height="90" fill="#7c3aed" rx="4"/>
+  <rect x="184" y="118" width="428" height="24" fill="#7c3aed"/>
+  <text x="398" y="88" fill="white" font-size="18" font-weight="bold" font-family="sans-serif" text-anchor="middle">JOSÉ MIGUEL CARDOZO</text>
+  <text x="398" y="108" fill="#e9d5ff" font-size="11" font-family="sans-serif" text-anchor="middle">Desenvolvedor Full-Stack Júnior</text>
+  <text x="398" y="130" fill="#e9d5ff" font-size="9" font-family="sans-serif" text-anchor="middle">migueljccardozo@gmail.com  •  +55 (24) 99973-6248  •  Rio de Janeiro, RJ</text>
+  <!-- Section: Resumo -->
+  <text x="200" y="162" fill="#7c3aed" font-size="10" font-weight="bold" font-family="sans-serif">RESUMO PROFISSIONAL</text>
+  <line x1="200" y1="166" x2="596" y2="166" stroke="#7c3aed" stroke-width="1"/>
+  <text x="200" y="180" fill="#374151" font-size="9" font-family="sans-serif">Desenvolvedor Full-Stack com experiência em sistemas escaláveis, APIs RESTful e interfaces</text>
+  <text x="200" y="192" fill="#374151" font-size="9" font-family="sans-serif">modernas. Especializado em React, Next.js, NestJS e integrações com IA e Meta Ads API.</text>
+  <!-- Section: Experiência -->
+  <text x="200" y="212" fill="#7c3aed" font-size="10" font-weight="bold" font-family="sans-serif">EXPERIÊNCIA PROFISSIONAL</text>
+  <line x1="200" y1="216" x2="596" y2="216" stroke="#7c3aed" stroke-width="1"/>
+  <text x="200" y="230" fill="#111827" font-size="10" font-weight="bold" font-family="sans-serif">Frog Summit — Desenvolvedor Júnior Full-Stack</text>
+  <text x="530" y="230" fill="#6b7280" font-size="9" font-family="sans-serif">Mar/2025 – Presente</text>
+  <text x="206" y="242" fill="#374151" font-size="9" font-family="sans-serif">• Desenvolvimento de dashboards e pipelines de ingestão para Meta Ads, Google Ads e TikTok.</text>
+  <text x="206" y="253" fill="#374151" font-size="9" font-family="sans-serif">• Code review constante e aplicação de SOLID e DDD.</text>
+  <text x="200" y="268" fill="#111827" font-size="10" font-weight="bold" font-family="sans-serif">Brasmid Startup — Desenvolvedor Júnior Full-Stack</text>
+  <text x="510" y="268" fill="#6b7280" font-size="9" font-family="sans-serif">Mai/2024 – Dez/2025</text>
+  <text x="206" y="280" fill="#374151" font-size="9" font-family="sans-serif">• Desenvolvimento full-cycle de plataformas Micro-SaaS com PHP/Laravel e Next.js.</text>
+  <text x="206" y="291" fill="#374151" font-size="9" font-family="sans-serif">• Deploy em AWS, modelagem PostgreSQL e criação de APIs RESTful.</text>
+  <!-- Section: Habilidades -->
+  <text x="200" y="310" fill="#7c3aed" font-size="10" font-weight="bold" font-family="sans-serif">HABILIDADES TÉCNICAS</text>
+  <line x1="200" y1="314" x2="596" y2="314" stroke="#7c3aed" stroke-width="1"/>
+  <text x="200" y="328" fill="#374151" font-size="9" font-family="sans-serif">Back-end: Node.js, NestJS, PHP, Laravel, Java/Spring Boot, Express.js</text>
+  <text x="200" y="340" fill="#374151" font-size="9" font-family="sans-serif">Front-end: React.js, Next.js, Vue.js, TypeScript, Tailwind CSS</text>
+  <text x="200" y="352" fill="#374151" font-size="9" font-family="sans-serif">Bancos de Dados: PostgreSQL, MySQL, MongoDB, Redis</text>
+  <text x="200" y="364" fill="#374151" font-size="9" font-family="sans-serif">DevOps: AWS, Docker, Kubernetes, CI/CD, GitHub Actions</text>
+  <!-- Section: Formação -->
+  <text x="200" y="384" fill="#7c3aed" font-size="10" font-weight="bold" font-family="sans-serif">FORMAÇÃO</text>
+  <line x1="200" y1="388" x2="596" y2="388" stroke="#7c3aed" stroke-width="1"/>
+  <text x="200" y="402" fill="#111827" font-size="9" font-weight="bold" font-family="sans-serif">Bacharelado em Sistemas para Internet — FAETERJ</text>
+  <text x="200" y="414" fill="#374151" font-size="9" font-family="sans-serif">Formação Full-Stack Developer — Escola DNC</text>
+  <!-- Left panel (outside CV) - stats -->
+  <rect x="16" y="56" width="154" height="70" rx="8" fill="#1a1030"/>
+  <text x="24" y="76" fill="#94a3b8" font-size="10" font-family="sans-serif">ADAPTAÇÕES DA IA</text>
+  <text x="24" y="98" fill="white" font-size="22" font-weight="bold" font-family="sans-serif">7</text>
+  <text x="24" y="114" fill="#94a3b8" font-size="10" font-family="sans-serif">palavras-chave inseridas</text>
+  <rect x="16" y="140" width="154" height="70" rx="8" fill="#1a1030"/>
+  <text x="24" y="160" fill="#94a3b8" font-size="10" font-family="sans-serif">COMPATIBILIDADE</text>
+  <text x="24" y="182" fill="#a855f7" font-size="22" font-weight="bold" font-family="sans-serif">94%</text>
+  <text x="24" y="198" fill="#94a3b8" font-size="10" font-family="sans-serif">com a vaga</text>
+  <!-- Right panel -->
+  <rect x="626" y="56" width="158" height="390" rx="8" fill="#1a1030"/>
+  <text x="642" y="80" fill="#94a3b8" font-size="10" font-family="sans-serif">PROMPT USADO</text>
+  <rect x="638" y="88" width="130" height="120" rx="4" fill="#160d28"/>
+  <text x="648" y="106" fill="#94a3b8" font-size="9" font-family="sans-serif">Vaga: Full-Stack</text>
+  <text x="648" y="120" fill="#94a3b8" font-size="9" font-family="sans-serif">Sênior — Nubank</text>
+  <text x="648" y="134" fill="#94a3b8" font-size="9" font-family="sans-serif">Template: Moderno</text>
+  <text x="648" y="148" fill="#94a3b8" font-size="9" font-family="sans-serif">Idioma: PT-BR</text>
+  <text x="642" y="232" fill="#94a3b8" font-size="10" font-family="sans-serif">OUTROS PDFs</text>
+  <rect x="638" y="240" width="130" height="36" rx="4" fill="#160d28"/>
+  <text x="648" y="263" fill="#a855f7" font-size="10" font-family="sans-serif">Itaú — Dev Backend</text>
+  <rect x="638" y="284" width="130" height="36" rx="4" fill="#160d28"/>
+  <text x="648" y="307" fill="#64748b" font-size="10" font-family="sans-serif">Totvs — Full-Stack</text>
+  <rect x="638" y="328" width="130" height="36" rx="4" fill="#160d28"/>
+  <text x="648" y="351" fill="#64748b" font-size="10" font-family="sans-serif">PagSeguro — Node.js</text>
+</svg>
