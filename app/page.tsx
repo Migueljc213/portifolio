@@ -44,12 +44,10 @@ import {
   Terminal,
   MapPin,
   Phone,
-  Globe,
   CheckCircle2,
   Activity,
   ListChecks,
-  Ticket,
-  Coffee,
+  FileDown,
 } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
@@ -161,12 +159,18 @@ export default function Portfolio() {
         <section className="container py-24 md:py-32">
           <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-center">
             <div className="space-y-6 md:w-1/2 animate-on-scroll transition-all duration-700 ease-out">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-100 text-green-700 text-sm font-medium">
-                <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-                </span>
-                Disponível para novas oportunidades
+              <div className="flex flex-wrap items-center gap-3">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-100 text-green-700 text-sm font-medium">
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                  </span>
+                  Disponível para novas oportunidades
+                </div>
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-xs font-medium">
+                  <Building2 className="h-3 w-3" />
+                  Atualmente na Frog Summit
+                </div>
               </div>
               <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
                 Olá, eu sou{" "}
@@ -184,16 +188,21 @@ export default function Portfolio() {
                   <Phone className="h-4 w-4" /> +55 (24) 99973-6248
                 </Link>
               </div>
-              <div className="flex gap-4">
+              <div className="flex flex-wrap gap-3">
                 <Button asChild className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 shadow-lg hover:shadow-xl transition-all duration-300">
                   <Link href="#contato">Entre em contato</Link>
                 </Button>
                 <Button variant="outline" asChild className="border-primary hover:bg-primary/10 transition-all duration-300">
                   <Link href="#projetos">Ver projetos</Link>
                 </Button>
+                <Button variant="outline" asChild className="border-slate-300 hover:border-blue-500 hover:text-blue-600 transition-all duration-300">
+                  <Link href="https://www.linkedin.com/in/jose-miguelfjc" target="_blank" rel="noopener noreferrer">
+                    <FileDown className="mr-2 h-4 w-4" />Currículo
+                  </Link>
+                </Button>
               </div>
               <div className="flex gap-4 pt-2">
-                <Link href="https://github.com/Migueljc123" target="_blank" rel="noopener noreferrer">
+                <Link href="https://github.com/Migueljc213" target="_blank" rel="noopener noreferrer">
                   <Button variant="ghost" size="icon" className="rounded-full hover:bg-pink-100 hover:text-pink-600 transition-all duration-300">
                     <Github className="h-5 w-5" />
                   </Button>
@@ -511,7 +520,7 @@ export default function Portfolio() {
               </span>
             </h2>
             <p className="text-center text-muted-foreground mb-12 animate-on-scroll transition-all duration-700 ease-out delay-100">
-              Projetos com múltiplas imagens alternam automaticamente a cada 3 segundos.
+              Sistemas reais em produção — cada projeto resolve um problema concreto.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
@@ -522,8 +531,9 @@ export default function Portfolio() {
                   alt="FunnelGuard AI"
                 />
                 <CardHeader>
+                  <Badge className="w-fit text-xs bg-orange-100 text-orange-700 mb-1">SaaS · Profissional</Badge>
                   <CardTitle>FunnelGuard AI</CardTitle>
-                  <CardDescription>SaaS de automação de tráfego pago com IA para Meta Ads</CardDescription>
+                  <CardDescription>Automação de campanhas de tráfego pago com IA</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2 mb-4">
@@ -535,20 +545,18 @@ export default function Portfolio() {
                     <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-200">Meta Ads API</Badge>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Plataforma SaaS com autenticação, dashboard analítico e automação inteligente de campanhas
-                    via Meta Ads API. IA integrada para análise e sugestões de otimização de anúncios.
+                    Gestores perdiam horas auditando campanhas manualmente. O FunnelGuard integra a Meta Ads API com IA para detectar anomalias, sugerir otimizações e centralizar métricas de performance em tempo real.
                   </p>
                 </CardContent>
                 <CardFooter className="flex justify-between">
-                  <Button variant="outline" size="sm" asChild className="group-hover:border-orange-500 group-hover:text-orange-600 transition-colors duration-300">
-                    {/* TODO: adicionar link do GitHub */}
-                    <Link href="" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" size="sm" asChild className="group-hover:border-blue-500 group-hover:text-blue-600 transition-colors duration-300">
+                    <Link href="https://github.com/Migueljc213/projeto-trafego-pago" target="_blank" rel="noopener noreferrer">
                       <Github className="mr-2 h-4 w-4" />Código
                     </Link>
                   </Button>
                   <Button size="sm" asChild className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 transition-all duration-300">
                     <Link href="https://projeto-trafego-pago.vercel.app" target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="mr-2 h-4 w-4" />Demo
+                      <ExternalLink className="mr-2 h-4 w-4" />Ver demo
                     </Link>
                   </Button>
                 </CardFooter>
@@ -561,8 +569,9 @@ export default function Portfolio() {
                   alt="Tickton TCC"
                 />
                 <CardHeader>
-                  <CardTitle>Tickton — TCC</CardTitle>
-                  <CardDescription>Plataforma de venda de ingressos com check-in por QR Code</CardDescription>
+                  <Badge className="w-fit text-xs bg-emerald-100 text-emerald-700 mb-1">TCC · Full-Stack Completo</Badge>
+                  <CardTitle>Tickton</CardTitle>
+                  <CardDescription>Venda de ingressos e check-in por QR Code para eventos</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2 mb-4">
@@ -574,20 +583,18 @@ export default function Portfolio() {
                     <Badge className="bg-purple-100 text-purple-700 hover:bg-purple-200">Jest</Badge>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Trabalho de Conclusão de Curso — plataforma completa para criação de eventos, venda de ingressos,
-                    gestão de organizadores e check-in de participantes via QR Code com testes automatizados.
+                    TCC de Sistemas para Internet: sistema completo para criação de eventos, venda de ingressos e check-in via QR Code. Back-end com NestJS, cobertura de testes Jest acima de 80% e arquitetura em módulos.
                   </p>
                 </CardContent>
                 <CardFooter className="flex justify-between">
-                  <Button variant="outline" size="sm" asChild className="group-hover:border-emerald-500 group-hover:text-emerald-600 transition-colors duration-300">
-                    {/* TODO: adicionar link do GitHub */}
-                    <Link href="" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" size="sm" asChild className="group-hover:border-blue-500 group-hover:text-blue-600 transition-colors duration-300">
+                    <Link href="https://github.com/Migueljc213/tickton-front" target="_blank" rel="noopener noreferrer">
                       <Github className="mr-2 h-4 w-4" />Código
                     </Link>
                   </Button>
                   <Button size="sm" asChild className="bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 transition-all duration-300">
                     <Link href="https://tickton-front.vercel.app" target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="mr-2 h-4 w-4" />Demo
+                      <ExternalLink className="mr-2 h-4 w-4" />Ver demo
                     </Link>
                   </Button>
                 </CardFooter>
@@ -600,8 +607,9 @@ export default function Portfolio() {
                   alt="Gerador de Currículos"
                 />
                 <CardHeader>
+                  <Badge className="w-fit text-xs bg-purple-100 text-purple-700 mb-1">Ferramenta · IA Generativa</Badge>
                   <CardTitle>Gerador de Currículos com IA</CardTitle>
-                  <CardDescription>Currículos personalizados em PDF gerados por IA por vaga</CardDescription>
+                  <CardDescription>CV personalizado por vaga em segundos, gerado por IA</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2 mb-4">
@@ -611,20 +619,18 @@ export default function Portfolio() {
                     <Badge className="bg-pink-100 text-pink-700 hover:bg-pink-200">Puppeteer</Badge>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Ferramenta que gera currículos em PDF personalizados por vaga usando IA. O usuário insere
-                    seu contexto profissional e a IA adapta o conteúdo para cada posição com templates visuais.
+                    Candidatos perdem horas adaptando currículos para cada vaga. Esta ferramenta usa a API do Claude para reescrever e personalizar o CV automaticamente com base na descrição da vaga, gerando um PDF pronto para envio.
                   </p>
                 </CardContent>
                 <CardFooter className="flex justify-between">
-                  <Button variant="outline" size="sm" asChild className="group-hover:border-purple-500 group-hover:text-purple-600 transition-colors duration-300">
-                    {/* TODO: adicionar link do GitHub */}
-                    <Link href="" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" size="sm" asChild className="group-hover:border-blue-500 group-hover:text-blue-600 transition-colors duration-300">
+                    <Link href="https://github.com/Migueljc213/gerador-curriculo" target="_blank" rel="noopener noreferrer">
                       <Github className="mr-2 h-4 w-4" />Código
                     </Link>
                   </Button>
                   <Button size="sm" asChild className="bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 transition-all duration-300">
                     <Link href="https://gerador-curriculo-23aw.vercel.app" target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="mr-2 h-4 w-4" />Demo
+                      <ExternalLink className="mr-2 h-4 w-4" />Ver demo
                     </Link>
                   </Button>
                 </CardFooter>
@@ -637,8 +643,9 @@ export default function Portfolio() {
                   alt="OmniPost AI"
                 />
                 <CardHeader>
+                  <Badge className="w-fit text-xs bg-cyan-100 text-cyan-700 mb-1">SaaS · Em Desenvolvimento</Badge>
                   <CardTitle>OmniPost AI</CardTitle>
-                  <CardDescription>Plataforma de gerenciamento e publicação de conteúdo com IA</CardDescription>
+                  <CardDescription>Gestão centralizada de conteúdo multimídia para equipes</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2 mb-4">
@@ -649,23 +656,16 @@ export default function Portfolio() {
                     <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-200">AWS S3</Badge>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Plataforma para gerenciamento e publicação de conteúdo multimídia com integração ao AWS S3
-                    para armazenamento de arquivos e recursos de IA para otimização de publicações.
+                    Centraliza upload de mídia (AWS S3), agendamento de publicações e geração de copy via IA para equipes de marketing. Elimina o fluxo fragmentado entre múltiplas ferramentas.
                   </p>
                 </CardContent>
                 <CardFooter className="flex justify-between">
-                  <Button variant="outline" size="sm" asChild className="group-hover:border-cyan-500 group-hover:text-cyan-600 transition-colors duration-300">
-                    {/* TODO: adicionar link do GitHub */}
-                    <Link href="" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" size="sm" asChild className="group-hover:border-blue-500 group-hover:text-blue-600 transition-colors duration-300">
+                    <Link href="https://github.com/Migueljc213/postagens_de_videos_back" target="_blank" rel="noopener noreferrer">
                       <Github className="mr-2 h-4 w-4" />Código
                     </Link>
                   </Button>
-                  <Button size="sm" asChild className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 transition-all duration-300">
-                    {/* TODO: adicionar link de acesso */}
-                    <Link href="" target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="mr-2 h-4 w-4" />Demo
-                    </Link>
-                  </Button>
+                  <Badge variant="outline" className="text-xs text-muted-foreground border-dashed">Em breve</Badge>
                 </CardFooter>
               </Card>
 
@@ -676,8 +676,9 @@ export default function Portfolio() {
                   alt="TaskFlow Java"
                 />
                 <CardHeader>
+                  <Badge className="w-fit text-xs bg-amber-100 text-amber-700 mb-1">Java · Estudo Avançado</Badge>
                   <CardTitle>TaskFlow</CardTitle>
-                  <CardDescription>Sistema de gerenciamento de projetos e tarefas em Java</CardDescription>
+                  <CardDescription>Gerenciamento de projetos e tarefas com Java e Spring Boot</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2 mb-4">
@@ -689,23 +690,16 @@ export default function Portfolio() {
                     <Badge className="bg-red-100 text-red-700 hover:bg-red-200">Docker</Badge>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Sistema completo de gerenciamento de projetos com autenticação JWT via Spring Security, dashboard,
-                    controle de status de tarefas, testes com JUnit/Mockito e containerização com Docker.
+                    Desenvolvido para consolidar Java em ambiente de produção: Kanban de tarefas, autenticação JWT com Spring Security, testes de integração com JUnit 5 e Mockito, e deploy containerizado com Docker.
                   </p>
                 </CardContent>
                 <CardFooter className="flex justify-between">
-                  <Button variant="outline" size="sm" asChild className="group-hover:border-amber-500 group-hover:text-amber-600 transition-colors duration-300">
-                    {/* TODO: adicionar link do GitHub */}
-                    <Link href="" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" size="sm" asChild className="group-hover:border-blue-500 group-hover:text-blue-600 transition-colors duration-300">
+                    <Link href="https://github.com/Migueljc213/taskflow-java" target="_blank" rel="noopener noreferrer">
                       <Github className="mr-2 h-4 w-4" />Código
                     </Link>
                   </Button>
-                  <Button size="sm" asChild className="bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 transition-all duration-300">
-                    {/* TODO: adicionar link de acesso */}
-                    <Link href="" target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="mr-2 h-4 w-4" />Demo
-                    </Link>
-                  </Button>
+                  <Badge variant="outline" className="text-xs text-muted-foreground border-dashed">Em breve</Badge>
                 </CardFooter>
               </Card>
 
@@ -716,8 +710,9 @@ export default function Portfolio() {
                   alt="GMG Educação"
                 />
                 <CardHeader>
+                  <Badge className="w-fit text-xs bg-pink-100 text-pink-700 mb-1">Freelance · Educação</Badge>
                   <CardTitle>GMG+ Educação</CardTitle>
-                  <CardDescription>Plataforma de venda e gestão de cursos online</CardDescription>
+                  <CardDescription>Plataforma de cursos online com painel multi-perfil</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2 mb-4">
@@ -728,8 +723,7 @@ export default function Portfolio() {
                     <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-200">MySQL</Badge>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Plataforma de cursos online com painéis para admins, alunos e empresas.
-                    Sistema de vagas, divulgação de currículos e landing page integrada.
+                    Cliente precisava vender cursos profissionalizantes online. Construída com PHP e MySQL, a plataforma tem painéis distintos para admins, alunos e empresas, além de sistema de vagas e landing page. Ainda no ar.
                   </p>
                 </CardContent>
                 <CardFooter className="flex justify-between">
@@ -753,8 +747,9 @@ export default function Portfolio() {
                   alt="Sistema AAP-VR"
                 />
                 <CardHeader>
+                  <Badge className="w-fit text-xs bg-blue-100 text-blue-700 mb-1">ERP · Liderança Técnica</Badge>
                   <CardTitle>Sistema de Gestão AAP-VR</CardTitle>
-                  <CardDescription>ERP com dashboard, agenda e controle financeiro</CardDescription>
+                  <CardDescription>ERP para escola — clientes, agenda, caixa e presença</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2 mb-4">
@@ -766,20 +761,13 @@ export default function Portfolio() {
                     <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-200">MySQL</Badge>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Liderança técnica no desenvolvimento de ERP para gestão de clientes, agenda, caixa, turmas
-                    e presença. Mentoria de estagiários e definição da arquitetura do sistema.
+                    Assumi a liderança técnica para construir um ERP do zero: arquitetura NestJS + Next.js, módulos de clientes, agenda, caixa, turmas e controle de presença. Também mentorei dois estagiários ao longo do projeto.
                   </p>
                 </CardContent>
-                <CardFooter className="flex justify-between">
-                  <Button variant="outline" size="sm" asChild className="group-hover:border-blue-500 group-hover:text-blue-600 transition-colors duration-300">
-                    {/* TODO: adicionar link do GitHub quando disponível */}
-                    <Link href="" target="_blank" rel="noopener noreferrer">
-                      <Github className="mr-2 h-4 w-4" />Código
-                    </Link>
-                  </Button>
+                <CardFooter className="flex justify-end">
                   <Button size="sm" asChild className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 transition-all duration-300">
                     <Link href="https://app-cpsi-web-git-main-valmeidavrs-projects.vercel.app/" target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="mr-2 h-4 w-4" />Demo
+                      <ExternalLink className="mr-2 h-4 w-4" />Ver demo
                     </Link>
                   </Button>
                 </CardFooter>
@@ -792,8 +780,9 @@ export default function Portfolio() {
                   alt="Bikcraft"
                 />
                 <CardHeader>
+                  <Badge className="w-fit text-xs bg-violet-100 text-violet-700 mb-1">Frontend · UX</Badge>
                   <CardTitle>Bikcraft</CardTitle>
-                  <CardDescription>Site institucional com foco em UX para loja de bicicletas</CardDescription>
+                  <CardDescription>Site para loja de bicicletas artesanais com foco em UX</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2 mb-4">
@@ -803,8 +792,7 @@ export default function Portfolio() {
                     <Badge className="bg-pink-100 text-pink-700 hover:bg-pink-200">UX Design</Badge>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Site completo para loja de bicicletas com landing page e catálogo de modelos,
-                    desenvolvido com foco em UX Design e navegação intuitiva.
+                    Primeiro projeto frontend significativo: site completo com landing page e catálogo de produtos, construído sem frameworks — demonstra domínio sólido de HTML, CSS e JavaScript antes de adotar React.
                   </p>
                 </CardContent>
                 <CardFooter className="flex justify-between">
@@ -828,8 +816,9 @@ export default function Portfolio() {
                   alt="ETPC Escola Técnica"
                 />
                 <CardHeader>
+                  <Badge className="w-fit text-xs bg-orange-100 text-orange-700 mb-1">Freelance · Institucional</Badge>
                   <CardTitle>ETPC — Escola Técnica CSN</CardTitle>
-                  <CardDescription>Site institucional para escola técnica com catálogo de cursos</CardDescription>
+                  <CardDescription>Site institucional com catálogo de cursos técnicos e matrícula online</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2 mb-4">
@@ -839,8 +828,7 @@ export default function Portfolio() {
                     <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-200">Vercel</Badge>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Site institucional para a ETPC (Escola Técnica da Fundação CSN) com catálogo de cursos
-                    técnicos, ensino médio, cursos online e portal do aluno. Foco em performance e SEO.
+                    A ETPC precisava de presença digital profissional. Desenvolvido em Next.js com catálogo de cursos técnicos, ensino médio integrado, matrículas online e SEO otimizado para atrair novos alunos.
                   </p>
                 </CardContent>
                 <CardFooter className="flex justify-end">
@@ -1107,8 +1095,8 @@ export default function Portfolio() {
                   </div>
                   <div className="flex items-center gap-3 hover:translate-x-1 transition-transform duration-300">
                     <Github className="h-5 w-5 text-purple-600 shrink-0" />
-                    <Link href="https://github.com/Migueljc123" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-purple-600 transition-colors">
-                      github.com/Migueljc123
+                    <Link href="https://github.com/Migueljc213" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-purple-600 transition-colors">
+                      github.com/Migueljc213
                     </Link>
                   </div>
                 </CardContent>
@@ -1152,7 +1140,7 @@ export default function Portfolio() {
             <p className="text-xs text-muted-foreground mt-0.5">Desenvolvedor Full-Stack · Rio de Janeiro, RJ</p>
           </div>
           <div className="flex gap-4">
-            <Link href="https://github.com/Migueljc123" target="_blank" rel="noopener noreferrer">
+            <Link href="https://github.com/Migueljc213" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="rounded-full hover:bg-pink-100 hover:text-pink-600 transition-all duration-300">
                 <Github className="h-5 w-5" />
               </Button>
