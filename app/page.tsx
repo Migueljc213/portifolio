@@ -183,7 +183,7 @@ export default function Portfolio() {
                 interfaces modernas. Trabalho com React, Next.js, Node.js, NestJS e integrações com IA.
               </p>
               <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
-                <span className="flex items-center gap-1"><MapPin className="h-4 w-4" /> Rio de Janeiro, RJ</span>
+                <span className="flex items-center gap-1"><MapPin className="h-4 w-4" /> Barra Mansa, RJ</span>
                 <Link href="https://wa.me/5524999736248" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-green-600 transition-colors">
                   <Phone className="h-4 w-4" /> +55 (24) 99973-6248
                 </Link>
@@ -306,7 +306,7 @@ export default function Portfolio() {
                     <div className="absolute left-0 top-1 w-6 h-6 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center shadow-md">
                       <div className="w-2 h-2 rounded-full bg-white"></div>
                     </div>
-                    <h4 className="font-semibold text-base">Desenvolvedor Júnior Full-Stack</h4>
+                    <h4 className="font-semibold text-base">Desenvolvedor Full-Stack</h4>
                     <div className="flex items-center gap-1 text-sm font-medium text-purple-600 mt-0.5">
                       <Building2 className="h-3.5 w-3.5" /> Frog Summit
                     </div>
@@ -322,12 +322,12 @@ export default function Portfolio() {
                     <div className="absolute left-0 top-1 w-6 h-6 rounded-full bg-gradient-to-br from-blue-500 to-indigo-500 flex items-center justify-center shadow-md">
                       <div className="w-2 h-2 rounded-full bg-white"></div>
                     </div>
-                    <h4 className="font-semibold text-base">Desenvolvedor Júnior Full-Stack</h4>
+                    <h4 className="font-semibold text-base">Desenvolvedor Full-Stack</h4>
                     <div className="flex items-center gap-1 text-sm font-medium text-blue-600 mt-0.5">
                       <Building2 className="h-3.5 w-3.5" /> Brasmid Startup
                     </div>
                     <div className="flex items-center gap-1 text-xs text-muted-foreground mt-0.5">
-                      <Calendar className="h-3 w-3" /> Mai/2024 – Dez/2025
+                      <Calendar className="h-3 w-3" /> Mai/2024 – Dez/2024
                     </div>
                     <p className="text-sm text-muted-foreground mt-2">
                       Desenvolvimento full-cycle de plataformas Micro-SaaS com PHP/Laravel e Next.js/React.
@@ -382,12 +382,12 @@ export default function Portfolio() {
                     <div className="absolute left-0 top-1 w-6 h-6 rounded-full bg-gradient-to-br from-teal-500 to-cyan-500 flex items-center justify-center shadow-md">
                       <div className="w-2 h-2 rounded-full bg-white"></div>
                     </div>
-                    <h4 className="font-semibold text-base">Formação Full-Stack Developer</h4>
+                    <h4 className="font-semibold text-base">Engenharia de Software</h4>
                     <div className="flex items-center gap-1 text-sm font-medium text-teal-600 mt-0.5">
                       <Building2 className="h-3.5 w-3.5" /> Escola DNC
                     </div>
                     <div className="flex items-center gap-1 text-xs text-muted-foreground mt-0.5">
-                      <Calendar className="h-3 w-3" /> Mai/2024 – Mar/2025
+                      <Calendar className="h-3 w-3" /> Jan/2024 – Dez/2024
                     </div>
                     <p className="text-sm text-muted-foreground mt-2">
                       Formação intensiva em front-end com React e Next.js, back-end com Node.js
@@ -1137,7 +1137,7 @@ export default function Portfolio() {
         <div className="container flex flex-col md:flex-row justify-between items-center gap-4">
           <div>
             <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} José Miguel Cardozo. Todos os direitos reservados.</p>
-            <p className="text-xs text-muted-foreground mt-0.5">Desenvolvedor Full-Stack · Rio de Janeiro, RJ</p>
+            <p className="text-xs text-muted-foreground mt-0.5">Desenvolvedor Full-Stack · Barra Mansa, RJ</p>
           </div>
           <div className="flex gap-4">
             <Link href="https://github.com/Migueljc213" target="_blank" rel="noopener noreferrer">
