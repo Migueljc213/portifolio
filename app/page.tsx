@@ -179,8 +179,9 @@ export default function Portfolio() {
                 </span>
               </h1>
               <p className="text-xl text-muted-foreground">
-                Desenvolvedor Full-Stack com experiência em sistemas escaláveis, APIs RESTful e
-                interfaces modernas. Trabalho com React, Next.js, Node.js, NestJS e integrações com IA.
+                Desenvolvedor Backend com foco em Node.js, NestJS e TypeScript, construindo APIs
+                RESTful escaláveis, seguras e observáveis. Experiência com Docker, PostgreSQL e
+                Cloud AWS, com interesse forte em performance e confiabilidade.
               </p>
               <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
                 <span className="flex items-center gap-1"><MapPin className="h-4 w-4" /> Barra Mansa, RJ</span>
@@ -242,31 +243,35 @@ export default function Portfolio() {
             </h2>
             <div className="max-w-3xl mx-auto space-y-5 text-muted-foreground animate-on-scroll transition-all duration-700 ease-out delay-200">
               <p className="text-base md:text-lg leading-relaxed">
-                Comecei programando por curiosidade e em pouco tempo estava liderando tecnicamente uma equipe no
-                Projeto AAP-VR — um ERP construído do zero com NestJS e Next.js, onde também mentorei estagiários.
-                Desde então, passei por uma startup onde fui responsável pelo ciclo completo de produtos Micro-SaaS,
-                e atualmente faço parte do time da <span className="text-foreground font-medium">Frog Summit</span>,
-                onde construo pipelines de ingestão de dados para plataformas de marketing digital como Meta Ads,
-                Google Ads, DV360 e TikTok.
+                Sou desenvolvedor back-end com foco em <span className="text-foreground font-medium">Node.js, NestJS e TypeScript</span>,
+                trabalhando hoje em plataformas SaaS em produção. A parte que mais me interessa é a que vem depois do
+                endpoint funcionar: performance, observabilidade e deploy confiável. Na{" "}
+                <span className="text-foreground font-medium">Frog Summit</span>, atuo no back-end de aplicações que
+                atendem cerca de <span className="text-foreground font-medium">3 mil usuários ativos por mês</span>.
               </p>
               <p className="text-base md:text-lg leading-relaxed">
-                Nos últimos dois anos entreguei sistemas reais em produção: de uma plataforma completa de venda de
-                ingressos com check-in por QR Code (meu TCC) à automação de campanhas de tráfego pago com IA via
-                Meta Ads API. Trabalho o ciclo completo — do banco de dados e API ao componente de UI — sempre com
-                foco em qualidade:{" "}
-                <span className="text-foreground font-medium">testes automatizados com Jest</span> (unitários,
-                integração e E2E), code reviews, pair programming e aplicação consistente de{" "}
-                <span className="text-foreground font-medium">SOLID, DDD e Clean Architecture</span>.
+                O que construí por lá: reduzi em <span className="text-foreground font-medium">~35%</span> o tempo
+                médio de resposta de endpoints críticos, otimizando queries em MySQL e aplicando cache com Redis;
+                encurtei o ciclo de deploy de 40 para menos de 10 minutos com CI/CD via GitHub Actions; levei a
+                cobertura de testes a mais de <span className="text-foreground font-medium">80%</span> nos módulos
+                críticos, o que derrubou cerca de 25% dos bugs em produção; e configurei observabilidade com{" "}
+                <span className="text-foreground font-medium">Prometheus, Grafana e AWS CloudWatch</span>.
               </p>
               <p className="text-base md:text-lg leading-relaxed">
-                Além do código, tenho experiência operacional real: containerização com Docker e Kubernetes, CI/CD via
-                GitHub Actions, observabilidade com Prometheus e Grafana, e deploy na AWS (EC2, SQS, SSM, CloudWatch).
-                Integro <span className="text-foreground font-medium">modelos de linguagem (LLMs)</span> em produtos
-                funcionais e estou ativamente me aprofundando em DevOps e fundamentos de IA generativa.
+                Antes disso, na Brasmid, entreguei do zero três produtos digitais — dois sites institucionais e um
+                Micro-SaaS — atuando sozinho no front-end e no back-end de cada um. Foi onde aprendi a decidir rápido
+                e a conviver com as consequências da decisão.
               </p>
               <p className="text-base md:text-lg leading-relaxed">
-                Busco uma equipe onde engenharia e produto andem juntos — onde boas práticas não são overhead, mas
-                parte da cultura — e onde eu possa continuar entregando soluções que resolvem problemas reais.
+                Fora do trabalho, estudo <span className="text-foreground font-medium">Java e Spring Boot</span>. Meu
+                projeto atual é o TaskFlow: um sistema de gestão de tarefas em Spring Boot 3 que expõe API REST e
+                interface web a partir do mesmo back-end, com duas SecurityFilterChain separadas, máquina de estados
+                no domínio e testes em três níveis com JUnit, MockMvc e Testcontainers. Também estou me preparando
+                para a certificação <span className="text-foreground font-medium">AWS Solutions Architect – Associate</span>.
+              </p>
+              <p className="text-base md:text-lg leading-relaxed">
+                A direção que quero seguir é back-end com responsabilidade de infraestrutura e confiabilidade, com
+                interesse forte em segurança de aplicações.
               </p>
             </div>
             {/* Destaques numéricos */}
@@ -306,16 +311,18 @@ export default function Portfolio() {
                     <div className="absolute left-0 top-1 w-6 h-6 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center shadow-md">
                       <div className="w-2 h-2 rounded-full bg-white"></div>
                     </div>
-                    <h4 className="font-semibold text-base">Desenvolvedor Full-Stack</h4>
+                    <h4 className="font-semibold text-base">Desenvolvedor Backend</h4>
                     <div className="flex items-center gap-1 text-sm font-medium text-purple-600 mt-0.5">
                       <Building2 className="h-3.5 w-3.5" /> Frog Summit
                     </div>
                     <div className="flex items-center gap-1 text-xs text-muted-foreground mt-0.5">
-                      <Calendar className="h-3 w-3" /> Mar/2025 – Presente
+                      <Calendar className="h-3 w-3" /> Abr/2025 – Presente
                     </div>
                     <p className="text-sm text-muted-foreground mt-2">
-                      Desenvolvimento de dashboards e pipelines de ingestão de dados para marketing digital,
-                      com Vue.js, NestJS e integrações com Meta Ads, Google Ads, DV360 e TikTok.
+                      Back-end de plataformas SaaS com ~3 mil usuários ativos/mês. Reduzi em ~35% o tempo de
+                      resposta de endpoints críticos (MySQL + Redis), encurtei o deploy de 40 para menos de
+                      10 min com CI/CD (GitHub Actions), elevei a cobertura de testes a 80%+ e implementei
+                      observabilidade com Prometheus, Grafana e AWS CloudWatch.
                     </p>
                   </div>
                   <div className="relative pl-10">
@@ -330,8 +337,9 @@ export default function Portfolio() {
                       <Calendar className="h-3 w-3" /> Mai/2024 – Dez/2024
                     </div>
                     <p className="text-sm text-muted-foreground mt-2">
-                      Desenvolvimento full-cycle de plataformas Micro-SaaS com PHP/Laravel e Next.js/React.
-                      Criação de APIs RESTful, modelagem PostgreSQL e deploys em ambiente cloud AWS.
+                      Entreguei do zero três produtos digitais — dois sites institucionais e um Micro-SaaS —
+                      atuando sozinho no front-end e no back-end de cada um, com PHP/Laravel, Node.js e
+                      Next.js/React.
                     </p>
                   </div>
                   <div className="relative pl-10">
@@ -366,12 +374,12 @@ export default function Portfolio() {
                     <div className="absolute left-0 top-1 w-6 h-6 rounded-full bg-gradient-to-br from-indigo-500 to-blue-500 flex items-center justify-center shadow-md">
                       <div className="w-2 h-2 rounded-full bg-white"></div>
                     </div>
-                    <h4 className="font-semibold text-base">Bacharelado em Sistemas para Internet</h4>
+                    <h4 className="font-semibold text-base">Tecnólogo em Tecnologia da Informação</h4>
                     <div className="flex items-center gap-1 text-sm font-medium text-indigo-600 mt-0.5">
-                      <Building2 className="h-3.5 w-3.5" /> FAETERJ
+                      <Building2 className="h-3.5 w-3.5" /> FAETERJ-Rio
                     </div>
                     <div className="flex items-center gap-1 text-xs text-muted-foreground mt-0.5">
-                      <Calendar className="h-3 w-3" /> Previsão: Jul/2026
+                      <Calendar className="h-3 w-3" /> Mar/2024 – Previsão: Jun/2026
                     </div>
                     <p className="text-sm text-muted-foreground mt-2">
                       Curso superior com foco em desenvolvimento web, redes, banco de dados,
@@ -392,6 +400,21 @@ export default function Portfolio() {
                     <p className="text-sm text-muted-foreground mt-2">
                       Formação intensiva em front-end com React e Next.js, back-end com Node.js
                       e bancos de dados relacionais e não-relacionais.
+                    </p>
+                  </div>
+                  <div className="relative pl-10">
+                    <div className="absolute left-0 top-1 w-6 h-6 rounded-full bg-gradient-to-br from-amber-500 to-orange-500 flex items-center justify-center shadow-md">
+                      <div className="w-2 h-2 rounded-full bg-white"></div>
+                    </div>
+                    <h4 className="font-semibold text-base">AWS</h4>
+                    <div className="flex items-center gap-1 text-sm font-medium text-amber-600 mt-0.5">
+                      <Building2 className="h-3.5 w-3.5" /> Hashtag Treinamentos
+                    </div>
+                    <div className="flex items-center gap-1 text-xs text-muted-foreground mt-0.5">
+                      <Calendar className="h-3 w-3" /> Out/2025 – Previsão: Mar/2026
+                    </div>
+                    <p className="text-sm text-muted-foreground mt-2">
+                      Formação voltada à certificação AWS Solutions Architect – Associate.
                     </p>
                   </div>
                 </div>
@@ -503,6 +526,72 @@ export default function Portfolio() {
                 <div className="flex flex-wrap gap-1">
                   {["Java", "OOP", "Spring Boot", "JUnit", "Streams"].map((t) => (
                     <Badge key={t} variant="outline" className="text-xs border-amber-200 text-amber-700">{t}</Badge>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* AWS Solutions Architect — Associate (em preparação) */}
+            <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 group animate-on-scroll transition-all duration-700 ease-out delay-450 relative overflow-hidden">
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-orange-500 to-yellow-500" />
+              <CardHeader className="pb-3 pt-5">
+                <div className="flex items-start justify-between gap-2">
+                  <div>
+                    <p className="text-xs font-semibold text-orange-600 uppercase tracking-wide mb-1">AWS</p>
+                    <CardTitle className="text-base leading-tight">Solutions Architect – Associate</CardTitle>
+                  </div>
+                  <Badge className="bg-green-100 text-green-700 text-xs shrink-0 mt-0.5">Em preparação</Badge>
+                </div>
+              </CardHeader>
+              <CardContent className="pb-4">
+                <p className="text-xs text-muted-foreground mb-3 flex items-center gap-1">
+                  <Calendar className="h-3 w-3" /> Out/2025 – Presente
+                </p>
+                <div className="flex flex-wrap gap-1">
+                  {["AWS", "Cloud Architecture", "EC2", "IAM"].map((t) => (
+                    <Badge key={t} variant="outline" className="text-xs border-orange-200 text-orange-700">{t}</Badge>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* AWS Serverless Demonstrated */}
+            <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 group animate-on-scroll transition-all duration-700 ease-out delay-500 relative overflow-hidden">
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-amber-400 to-orange-500" />
+              <CardHeader className="pb-3 pt-5">
+                <div className="flex items-start justify-between gap-2">
+                  <div>
+                    <p className="text-xs font-semibold text-amber-600 uppercase tracking-wide mb-1">AWS</p>
+                    <CardTitle className="text-base leading-tight">AWS Serverless Demonstrated</CardTitle>
+                  </div>
+                  <Badge className="bg-slate-100 text-slate-600 text-xs shrink-0 mt-0.5">Concluído</Badge>
+                </div>
+              </CardHeader>
+              <CardContent className="pb-4">
+                <div className="flex flex-wrap gap-1">
+                  {["Serverless", "Lambda", "AWS"].map((t) => (
+                    <Badge key={t} variant="outline" className="text-xs border-amber-200 text-amber-700">{t}</Badge>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Fortinet NSE 3 — Cybersecurity */}
+            <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 group animate-on-scroll transition-all duration-700 ease-out delay-550 relative overflow-hidden">
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-red-500 to-rose-500" />
+              <CardHeader className="pb-3 pt-5">
+                <div className="flex items-start justify-between gap-2">
+                  <div>
+                    <p className="text-xs font-semibold text-red-600 uppercase tracking-wide mb-1">Fortinet</p>
+                    <CardTitle className="text-base leading-tight">NSE 3 — Cybersecurity</CardTitle>
+                  </div>
+                  <Badge className="bg-slate-100 text-slate-600 text-xs shrink-0 mt-0.5">Concluído</Badge>
+                </div>
+              </CardHeader>
+              <CardContent className="pb-4">
+                <div className="flex flex-wrap gap-1">
+                  {["Cybersecurity", "Networking", "Security Fundamentals"].map((t) => (
+                    <Badge key={t} variant="outline" className="text-xs border-red-200 text-red-700">{t}</Badge>
                   ))}
                 </div>
               </CardContent>
